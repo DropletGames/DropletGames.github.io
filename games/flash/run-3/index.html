@@ -33,7 +33,8 @@
                     document.head.appendChild(script);
                   } else {
                     async function enableRuffle() {
-                      localStorage.setItem('ruffleEnabled', 'true')
+                      localStorage.setItem('ruffleEnabled', 'true');
+                      window.location.reload();
                     }
                     var flashNotice = document.getElementById('flash-notice')
                     flashNotice.innerHTML = '<p>Without a <a href="../../../runningflash.html">Flash-compatible plugin</a> installed on an older browser, <i>or</i> Ruffle enabled on a newer browser, Flash games will not work.</p>\n\
