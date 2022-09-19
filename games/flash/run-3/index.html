@@ -36,11 +36,12 @@
                       localStorage.setItem('ruffleEnabled', 'true');
                       window.location.reload();
                     }
+                    window.enableRuffle = enableRuffle;
                     var flashNotice = document.getElementById('flash-notice')
                     flashNotice.innerHTML = '<p>Without a <a href="../../../runningflash.html">Flash-compatible plugin</a> installed on an older browser, <i>or</i> Ruffle enabled on a newer browser, Flash games will not work.</p>\n\
                     <p>You may do one of the following:<p>\n\
                     <ul>\n\
-                      <li><button type="button" onclick="enableRuffle()">Enable Ruffle</button></li>\n\
+                      <li><button type="button" onclick="javascript:enableRuffle()">Enable Ruffle</button></li>\n\
                       <li><a href="https://www.adobe.com/go/getflashplayer"><img src="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Load Adobe Flash player" /></a></li>\n\
                     </ul>'
                   }
