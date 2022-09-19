@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings | Droplet Games</title>
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <noscript>Changing these settings requires JavaScript</noscript>
+    <h2 id="ruffle">Ruffle</h2>
+    <p>Enable Ruffle, allowing you to play Flash games in a modern browser in 2020 and beyond</p>
+    <div id="ruffleButton"><noscript>Enabling Ruffle requires JavaScript</noscript></div>
+    <script>
+        let ruffleButton = "<button type=\"button\" onclick=\"javascript:toggleRuffle()\"><div id=\"ruffleLabel\"></div></button>"
+        let ruffleButtonDiv = document.getElementById('ruffleButton')
+        ruffleButtonDiv.innerHTML = ruffleButton;
+        async function toggleRuffle() {
+            localStorage.setItem('ruffleEnabled', 'true');
+            if (localStorage.getItem('ruffleEnabled') == 'true') {
+                localStorage.setItem('ruffleEnabled', 'false')
+            } else {
+                localStorage.setItem('ruffleEnabled', 'true')
+            }
+        }
+        async function ruffleLabel() {
+            var ruffleLabel = document.getElementById('ruffleLabel');
+            switch(localStorage.getItem('ruffleEnabled')) {
+                case 'true':
+                    ruffleLabel.innerHTML = "Disable Ruffle";
+                    break;
+                default:
+                    ruffleLabel.innerHTML = "Enable Ruffle";
+                    break;
+            }
+        }
+        window.toggleRuffle = toggleRuffle;
+        window.ruffleLabel = ruffleLabel;
+        ruffleLabel()
+    </script>
+
+    <a href="./weblabels.html" rel="jslicense" data-jslicense="1"></a>
+  </body>
+</html>
