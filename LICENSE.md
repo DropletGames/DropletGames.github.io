@@ -2,7 +2,7 @@
 All content not listed here is under the MIT license.
 
 ## Games
-**ALL GAMES ARE EXCLUDED FROM THIS LIST**. They are (most likely) all rights reserved, and I legally don't have rights or permission to use any of them.
+**ALL GAMES HERE ARE EXCLUDED FROM THE MIT LICENSE**. They are (most likely) all rights reserved, and I legally don't have rights or permission to use any of them. If there is a license, 
 
 Please do not send a pull request to add games yourself-- instead, you can send an issue for me to add it myself and I'll look into it.
 
