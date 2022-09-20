@@ -10,6 +10,7 @@
     <p>Enable Ruffle, allowing you to play Flash games in a modern browser in 2020 and beyond</p>
     <div id="ruffleButton"><noscript>Enabling Ruffle requires JavaScript</noscript></div>
     <script>
+        // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat/MIT
         let ruffleButton = "<button type=\"button\" onclick=\"javascript:toggleRuffle()\"><div id=\"ruffleLabel\"></div></button>"
         let ruffleButtonDiv = document.getElementById('ruffleButton')
         ruffleButtonDiv.innerHTML = ruffleButton;
@@ -35,6 +36,7 @@
         window.toggleRuffle = toggleRuffle;
         window.ruffleLabel = ruffleLabel;
         ruffleLabel()
+        // @license-end
     </script>
 
     <a href="./weblabels.html" rel="jslicense" data-jslicense="1"></a>
