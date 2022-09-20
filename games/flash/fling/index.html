@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fling | Droplet Games</title>
+    <meta charset="utf8">
+    <meta name="robots" content="noindex">
+    <script src="../../../assets/js/swfobject/swfobject.js"></script>
+  </head>
+  <body>
+    <h1>Fling</h1>
+    <div>
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="600" id="run3">
+            <param name="movie" value="./Fling.swf" />
+            <param name="wmode" value="direct" />
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="./Fling.swf" width="800" height="600">
+                <param name="wmode" value="direct" />
+            <!--<![endif]-->
+            <!-- This could all be much shorter (and probably more readable) with the help of some CSS. Will get around to doing this eventually -->
+                <div id="flash-notice">
+                  <noscript>
+                    <p>Without a <a href="../../../runningflash.html">Flash-compatible plugin</a> installed on an older browser, <i>or</i> Ruffle enabled on a newer browser, Flash games will not work.</p>
+                    <p>You may do one of the following:<p>
+                    <ul>
+                      <li>Enable JavaScript to enable and use Ruffle</li>
+                      <li><a href="https://www.adobe.com/go/getflashplayer"><img src="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Load Adobe Flash player" /></a></li>
+                    </ul></noscript>
+                  </div>
+                <script>
+                  if(localStorage.getItem('ruffleEnabled') == 'true') {
+                    var script = document.createElement('script');
+                    script.src = "../../../assets/js/ruffle/ruffle.js"
+                    document.head.appendChild(script);
+                  } else {
+                    async function enableRuffle() {
+                      localStorage.setItem('ruffleEnabled', 'true');
+                      window.location.reload();
+                    }
+                    window.enableRuffle = enableRuffle;
+                    var flashNotice = document.getElementById('flash-notice')
+                    flashNotice.innerHTML = '<p>Without a <a href="../../../runningflash.html">Flash-compatible plugin</a> installed on an older browser, <i>or</i> Ruffle enabled on a newer browser, Flash games will not work.</p>\n\
+                    <p>You may do one of the following:<p>\n\
+                    <ul>\n\
+                      <li><button type="button" onclick="javascript:enableRuffle()">Enable Ruffle</button></li>\n\
+                      <li><a href="https://www.adobe.com/go/getflashplayer"><img src="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Load Adobe Flash player" /></a></li>\n\
+                    </ul>'
+                  }
+                </script>
+            <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+        </object>
+    </div>
+    <p><i>This game has not been modified in any way, in compliance with Kongregate's <a href="https://www.kongregate.com/user-agreement">User Agreement</a> (see <a href="https://www.kongregate.com/games_for_your_site">Games for Your Site</a>). Please support the original creator of this game by playing this game on <a href="https://www.kongregate.com/games/player_03/run-3">Kongregate</a> or <a href="https://player03.com/run/3/">the developer's website</a>. For their sake, game pages are not listed in search engines.</a></i></p>
+
+    <a href="../../../weblabels.html" rel="jslicense" data-jslicense="1"></a>
+  </body>
+</html>
