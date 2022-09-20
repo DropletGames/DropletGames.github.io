@@ -18,8 +18,10 @@
             localStorage.setItem('ruffleEnabled', 'true');
             if (localStorage.getItem('ruffleEnabled') == 'true') {
                 localStorage.setItem('ruffleEnabled', 'false')
+                ruffleLabel()
             } else {
                 localStorage.setItem('ruffleEnabled', 'true')
+                ruffleLabel()
             }
         }
         async function ruffleLabel() {
