@@ -9,6 +9,11 @@
     <noscript><p><i>This requires JavaScript</i></p></noscript>
     <p>Available soon</p>
     <script>
+      window.onerror = function (msg, url, lineNo, columnNo, error) {
+        alert('An error occurred:\n\n'+msg+'\n\n'+lineNo+':'+columnNo)
+      }
+    </script>
+    <script>
     // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat/MIT
     async function swfloader() {
       document.getElementById('swfDiv').innerHTML = `<object width="${document.getElementById('width').value}" height="${document.getElementById('height').value}">
